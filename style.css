@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+ 
+/* Base styles for the HTML and body to occupy the full height of the viewport */
+ html, body {
+    height: 100%; 
+    margin: 0;
+    font-family: Arial, sans-serif; /* Add a font for consistency */
+} 
+/* Container styling */
+ .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for background image to be visible */
+    padding: 20px;
+}
+
+/* Weather card styling */
+ .card {
+    width: 18rem;
+    border: 1px solid #d3d3d3; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff; /* White background for card */
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 20px;
+}
+
+/* Image inside the card */
+ .card-img-top {
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+
+/* Card title */
+.card-title {
+    font-weight: bold;
+    color: #8b8686;
+    margin: 0;
+    padding-top: 10px;
+}
+
+/* Background for sunny weather */
+.sunny-bg {
+    background-image: url('https://i.pinimg.com/originals/60/9e/44/609e44257fd33af41f9c6bc1e458838e.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: -50px;
+}
+
+/* Background for windy weather */
+.windy-bg {
+    background-image: url('https://gifdb.com/images/high/wind-blowing-in-the-meadows-jezyhl77dpy8vj52.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+/* Responsive fix to center the card on smaller screens */
+ @media (max-width: 768px) {
+    .container-fluid {
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 90vw;
+    }
+}
+
+
+.sunny-bg {
+    background-image: url('https://media.istockphoto.com/id/1097573496/photo/dark-clouds-on-blue-sky.jpg?s=612x612&w=0&k=20&c=kL6wEcA7HUzmYxdy9O9mISsHK40XJ0dExUEqeCi0k4A=');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin-top: -50px;
+   
+}
+
+.cloudy-bg {
+    background-image: url('https://i.pinimg.com/originals/49/d2/7c/49d27cc7feb4f849fb3d4134590e977d.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin-top: -50px;
+   
+}
+
+
+.rainy-bg {
+    background-image: url('https://i.pinimg.com/originals/87/eb/d9/87ebd96d079b1737b97f2b3847da9d47.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin-top: -50px;
+   
+}
+
+.snowy-bg {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/23/14/54/snow-1853352_1280.jpg');
+    background-size: contain; /* Change cover to contain for better scaling */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .snowy-bg {
+        background-size: cover; /* Switch to cover on larger screens */
+    }
+}
+
+
+  .h1{
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+  }
+  
+  .card-text{
+    
+   font-family:  "Playwrite GB S", cursive;
+}
